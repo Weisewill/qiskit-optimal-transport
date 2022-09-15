@@ -1,12 +1,12 @@
-# Optimal Transport problem 
+# Solve Optimal Transport problem with Qiskit
   
-## Introduction
+## Introduction to Optimal Transport 
 
 In the 18th centry the Franch mathematician Gaspard Monge formulated the problem of minimizing a worker's overall effort of moving sands in a construction site to a predescribed shape using the Optimal Transport (OT) theory. Since then, OT has been studied in different eras of history and a lot of applicaitons in logistics and economics have been developed by mathematicians such as Tolstoi, Kantorovich, Hitchcock, and Koopmans. Solving a OT problem remained a difficult problem. In 1949 Danzig re-formulated OT into a linear programming form and solved it numerically by optimization method. Recently, approximation algorithms, such as entropy-regularized OT, made solving large-scale OT problems much cheaper in computation. Researchers have applied OT to several machine learning problems such as OT-GAN. 
 
 Quantum computing is a promising method to solve a large-scale OT problem exactly due to its powerful capability of solving combinatorial optimization problems. In the notebook, I cast the discrete integer OT problem to linear programming, transform it to Quadratic Unconstrained Binary Optimization (QUBO) form within Qiskit's framework, and finally solve it by Qiskit's Quantum Approximate Optimization Algorithm (QAOA).
 
-## Mathematical formulation
+## Mathematical formulation of Optimal Transport
 
 Following the Monge-Kontorovitch formulation, the objective of the discrete optimal transport problem is to find a transpotation plan, $T$, which minimizes the overall cost $L_{C}$:
 
